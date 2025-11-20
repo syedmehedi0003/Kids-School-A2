@@ -1,0 +1,84 @@
+/* google fotns  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-common {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles  */
+header, main{
+    max-width: 90%;
+    margin: 0 auto;
+}    
+
+.primary-bg{
+    background-color: #FEA301;
+}
+.secondary-bg{
+    background-color: #01ACFD;
+}
+
+.primary-clr{
+    color: #FEA301;
+}
+
+.secondary-clr{
+    color: #01ACFD;
+}
+.black{
+    color: #111111;
+}
+.white{
+    color: #FFFFFF;
+}
+.color3{
+    color: #68A2DF;
+}
+
+/* shared styles  */
+/* ------------------------------------------------ */
+
+
+/* header styles  */
+
+header, .logo, nav>ul, .connect{
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+ul>li{
+    list-style: none;
+    margin-left: 32px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home{
+    font-weight: 700;
+}
+
+.connect{
+    border: none;
+    border-radius: 8px;
+}
+
+.connect a{
+    text-decoration: none;
+    font-size: 16px;
+    font-style: 600;
+    padding: 8px 30px;
+}
