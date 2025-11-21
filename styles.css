@@ -44,11 +44,11 @@ header, main{
 
 /* header styles  */
 
-header, .logo, nav>ul, .connect{
+.nav-menu, .logo, nav>ul, .connect{
     display: flex;
 }
 
-header{
+.nav-menu{
     justify-content: space-between;
     align-items: center;
 }
@@ -81,4 +81,38 @@ ul>li{
     font-size: 16px;
     font-style: 600;
     padding: 8px 30px;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.banner-text > h2{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin: 10px 0px;
+    padding-right: 40px;
+}
+
+.banner-text > p{
+    font-size: 1.25rem;
+
+}
+
+
+.enroll{
+    background-color: #111111;
+    border-radius: 8px;
+     padding: 6px 15px;
+}
+
+.enroll a{
+    font-size: 1rem;
+    font-weight: 7000;
+    text-decoration: none;
+   
 }
