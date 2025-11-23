@@ -9,10 +9,13 @@
 }
 
 /* shared styles  */
-header, main{
+header,
+.curriculum{
     max-width: 90%;
     margin: 0 auto;
-}    
+}  
+
+
 
 .primary-bg{
     background-color: #FEA301;
@@ -117,14 +120,19 @@ ul>li{
    
 }
 
+/* header part end  */
+
+/* curriculum part start  */
+
 .curriculum{
     background-image: url("assets/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
-.curriculum h1{
+.section-tittle{
     font-size: 2.87rem;
     font-weight: 7000;
     text-align: center;
@@ -142,11 +150,12 @@ ul>li{
     max-width: 28%;
     text-align: center;
     height: 350px;
-    /* background-image: linear-gradient(to top, rgba(96, 93, 93, 0), rgb(209, 241, 223)); */
-    /* background-image: linear-gradient(rgb(144, 242, 206) rgb(234, 245, 234)); */
     padding: 50px 20px;
     border-radius: 18px;
     box-shadow: 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    /* background-image: linear-gradient(to top, rgba(96, 93, 93, 0), rgb(209, 241, 223)); */
+    /* background-image: linear-gradient(rgb(144, 242, 206) rgb(234, 245, 234)); */
+    
    
 }
 
@@ -201,6 +210,166 @@ ul>li{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+
+/* curriculum part end  */
+
+/* stories  part start  */
+
+.stories{
+    background-image: url("assets/bg.png"), linear-gradient(#f7f7f7, #f3e3c9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    /* background-image: linear-gradient(#f7f7f7, #f3e3c9); */
+   
+}
+
+.stories-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+
+   
+}
+
+.side-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.main-card, .s-card{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding-bottom: 12px;
+}
+
+.main-card img, .s-card img{
+    border-radius: 15px 15px 0px 0px;
+    display: block;
+    width: 100%;
+}  
+
+.main-card h2, p{
+    padding: 0px 30px;
+}
+.main-card p{
+    color: #666666;
+    margin-top: 50px;
+}
+
+.s-card h4, p{
+    padding: 0px 30px;
+}
+
+.s-cardt h4{
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.main-card h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+#badge{
+    border-radius: 18px;
+    border: none;
+    padding: 10px;
+    width: 140px;
+    margin-top: -20px;
+    margin-left:40px;
+    position: relative;
+    background-color: #01ACFD;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 0.95rem;
+   
+}
+
+.store-btn{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.view-all{
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 5px 30px;
+ 
+}
+
+.view-all a{
+    color: #FFFFFF;
+    text-decoration: none;   
+}
+/* stories  part end  */
+
+footer{
+    background-color: #01ACFD;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.kids{
+    display: flex;
+    align-items: center;
+}
+
+.kids img{
+    padding-top: 30px;
+}
+.kids h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.kids-logo p{
+    font-size: 1rem;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+  .kids-logo, .nav, .icon{
+       padding-left: 100px;
+       padding-top: 100px;
+       padding-bottom: 120px;
+       color: white;
+}
+
+.nav h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.nav ul>li{
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+}
+
+.icon h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.icon img{
+    height: 40px;
+    width: 40px;
 }
 
 

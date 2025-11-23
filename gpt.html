@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f6f2ea;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main-card,
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.main-card img,
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px 12px 0 0;
+}
+
+.date-tag {
+    background: #07b2ff;
+    color: white;
+    display: inline-block;
+    margin: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: -60px;
+}
+
+.main-card h2 {
+    margin: 10px 15px;
+}
+
+.main-card p {
+    margin: 0 15px 15px;
+    line-height: 1.5;
+}
+
+.side-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card h3 {
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .side-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+    <!-- LEFT MAIN CARD -->
+    <div class="main-card">
+        <img src="assets/story-1.png" alt="Main Image">
+
+        <div class="date-tag">November 19, 2019</div>
+
+        <h2>A fun toddler coloring training on classroom</h2>
+        <p>
+            Beautiful branding for changes by Never Now in Australia. Changes is a platform for open
+            discussion in an inclusive and collaborative environment...
+        </p>
+    </div>
+
+    <!-- RIGHT GRID CARDS -->
+    <div class="side-grid">
+
+        <!-- Repeat this card as needed -->
+        <div class="card">
+            <img src="assets/story-2.png" alt="Child Image">
+            <div class="date-tag">November 19, 2019</div>
+            <h3>Find out if a school fits the family's needs</h3>
+        </div>
+
+        <div class="card">
+            <img src="assets/story-3.png" alt="Child Image">
+            <div class="date-tag">November 19, 2019</div>
+            <h3>Find out if a school fits the family's needs</h3>
+        </div>
+
+        <div class="card">
+            <img src="assets/story-4.png" alt="Child Image">
+            <div class="date-tag">November 19, 2019</div>
+            <h3>Find out if a school fits the family's needs</h3>
+        </div>
+
+        <div class="card">
+            <img src="assets/story-5.png" alt="Child Image">
+            <div class="date-tag">November 19, 2019</div>
+            <h3>Find out if a school fits the family's needs</h3>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
