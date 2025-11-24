@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids School</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- custom style link  -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body class="quicksand-common ">
     <header>
+
+        <!-- for mobile nav bar  -->
+        <div class="mobile-container">
+
+               <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <img src="assets/logo.png" alt="">
+                <div id="myLinks">
+            
+                <nav>
+                    <ul>
+                        <li class="primary-clr home">Home</li>
+                        <li class="secondary-clr">About</li>
+                        <li class="secondary-clr">Facilities</li>
+                        <li class="color3">Admission</li>
+                    </ul>
+                </nav>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- for mobile nav bar  -->
+
+
        <div class="nav-menu">
             <div class="logo">
                 <img src="assets/logo.png" alt="">
@@ -29,6 +60,13 @@
 
        </div>
 
+       <marquee class="marq" bgcolor="" 
+                 direction="left" loop="">
+            <div class="school ">
+                Empowering students from small age towards vision
+            </div>
+        </marquee>
+
         <div class="banner">
             <div class="banner-content">
                 <div class="banner-text">
@@ -45,6 +83,9 @@
                 </div>
             </div>
         </div>
+
+        
+
     </header>
 
     <main>
@@ -119,7 +160,7 @@
 
                 <div class="main-card">
                     <img src="assets/story-1.png" alt="">
-                    <p id="badge" class="date-tag">November 19, 2019</p>
+                    <p id="badge" class="secondary-bg">November 19, 2019</p>
                     <h2>
                         A fun toddler coloring training on classroom
                     </h2>
@@ -134,32 +175,32 @@
                     
                     <div class="s-card">
                         <img src="assets/story-2.png" alt="">
-                        <p id="badge" class="date-tag">November 19, 2019</p>
-                        <h4>
+                        <p id="badge" class="primary-bg">November 19, 2019</p>
+                        <h4 class="s-card-h4">
                             Find out if a school fits the family’s needs
                         </h4>
                     </div>
 
                     <div class="s-card">
                         <img src="assets/story-3.png" alt="">
-                        <p id="badge" class="date-tag">November 19, 2019</p>
-                        <h4>
+                        <p id="badge" class="secondary-bg">November 19, 2019</p>
+                         <h4 class="s-card-h4">
                             Summer math & literacy centres for kids
                         </h4>
                     </div>
 
                     <div class="s-card">
                         <img src="assets/story-4.png" alt="">
-                        <p id="badge" class="date-tag">November 19, 2019</p>
-                        <h4>
+                        <p id="badge" class="bg-clr03">November 19, 2019</p>
+                         <h4 class="s-card-h4">
                             Classroom management techniques for new tutors
                         </h4>
                     </div>
 
                     <div class="s-card">
                         <img src="assets/story-5.png" alt="">
-                        <p id="badge" class="date-tag">November 19, 2019</p>
-                        <h4>
+                        <p id="badge" class="primary-bg">November 19, 2019</p>
+                         <h4 class="s-card-h4">
                            Conversation rhymes improve kids listening
                         </h4>
                     </div>
@@ -213,8 +254,20 @@
             <img src="assets/google+.png" alt="">
         </div>
 
-
     </footer>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
 </body>
 </html>
 
